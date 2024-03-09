@@ -8,9 +8,18 @@
     border: none;
     cursor: pointer;
     color: white;
-    font-size: 18px;
+    font-size: 32px;
 
     &_box{
-        border: 2px solid green; //ayuda visual
+        position: relative;
+    }
+    &_shadow{
+        width: 60px;
+        height: 60px;
+        background-color: v.$color2;
+        border-radius: 50%;
+        position: absolute; //necesita un padre con position:relative;
+        top: 5px;
+        z-index: -1;
     }
 }

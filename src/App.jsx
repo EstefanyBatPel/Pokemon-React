@@ -8,8 +8,14 @@ const App = () => {
         <>
         {/* tarjetas */}
         <div className="buttons-container">
-            <Button icon={<TiArrowLeftOutline />} />
-            <Button icon={<TiArrowRightOutline />} />
+            <Button 
+            icon={<TiArrowLeftOutline />}
+            handleClick={() => {console.log('anterior')}}
+            />
+            <Button 
+            icon={<TiArrowRightOutline />} 
+            handleClick={() => {console.log('siguiente')}}
+            />
         </div>
         </>
     )
