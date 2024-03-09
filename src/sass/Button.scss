@@ -1,6 +1,16 @@
+@use 'variables' as v;
+
 .button{
-    background-color: red;
+    background-color: v.$color1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+
     &_box{
-        border: 1px solid red;
+        border: 2px solid green; //ayuda visual
     }
 }
