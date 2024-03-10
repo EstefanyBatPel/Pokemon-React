@@ -1,7 +1,12 @@
+// Components
+import { Card } from "./assets/components/Card";
 import { Button } from "./assets/components/Button"
+// Styles
 import './sass/App.scss'
+// Icons
 import { TiArrowLeftOutline } from "react-icons/ti";
 import { TiArrowRightOutline } from "react-icons/ti";
+// Hooks
 import { useState } from "react";
 
 const App = () => {
@@ -20,7 +25,12 @@ const App = () => {
 
     return(
         <>
-        {/* tarjetas */}
+        {/* Tarjetas del pokemon */}
+        <div className="card-container">
+            <Card />
+        </div>
+
+        {/* Botones */}
         <div className="buttons-container">
             <Button 
             icon={<TiArrowLeftOutline />}
