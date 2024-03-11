@@ -47,7 +47,7 @@ const App = () => {
     async function getPokemonImgs(name){
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}/`)
         const data = await response.json()
-            return (data.sprites.other['official-artwork'].front_default)
+            return (data.sprites.front_default)
             
         //3D (data.sprites.other.showdown.front_default)
         //PixelArt (data.sprites.front_default)
